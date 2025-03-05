@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="images/css/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="images/css/style316.css">
+</head>
+
+
+<style>
+
+/* -------------General Body Styles---------------- */
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-image: url(images/Gallery/Background/12_20_2024\ 9_24_03\ AM.png);
+    background-size: cover;
+    background-position: center;
+    opacity: 0; 
+    transition: opacity 1s ease-in-out; 
+}
+
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('https://png.pngtree.com/background/20230519/original/pngtree-vintage-mirrors-in-a-room-with-many-mirrors-picture-image_2659080.jpg');
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+    z-index: -1;
+    transition: opacity 1s ease-in-out; 
+}
+
+body.loaded {
+    opacity: 1;
+}
+
+
+body.loaded::before {
+    opacity: 0.2; 
+}
+
+
+
+</style>
+<body>
+
+    <div class="body">
+
+       <!-- Loading Spinner -->
+  <div class="loading-container">
+    <div class="loading-spinner"></div>
+</div>
+
+    <!-- Header Section -->
+   <!-- Navbar Section -->
+   <nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">
+            <img id="logo1" src="images/Gallery/logo/97759E74-FEB3-4EAB-80D0-E8ED13B462EE-removebg-preview.png" width="25%" alt="">
+        </a>
+        <!-- Navbar Links and Search Form -->
+        <div class="collapse navbar-collapse text-center item9" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a id="nav-link" class="nav-link " href="home.html">Home</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a id="nav-link" class="nav-link" href="Categories.html" >Categories</a>
+                
+                </li>
+                
+                <li  class="nav-item">
+                    <a id="nav-link1" class="nav-link" href="aboutus.html">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a id="nav-link1" class="nav-link" href="contactus.html">Contact Us</a>
+                </li>
+              
+              
+                  <!-- Cart Icon -->
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        <i class="text-warning fas fa-shopping-cart"></i>
+                        <span class="badge bg-danger" id="cart-count">0</span> <!-- Cart item count -->
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!-- Toggle Button for Mobile -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon "></span>
+        </button>
+    </div>
+</nav>
+
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="main">
+            <h2 class="welcome"><i>Welcome</i></h2>
+            <h1 class="clear-reflection">Clear Reflection!</h1>
+            <p class="para">Welcome to Clear Reflection, where mirrors meet artistry and functionality. We are a passionate team dedicated to offering a wide range of high-quality mirrors that reflect not only your image but also your unique style. Our goal is to help you enhance your home’s décor, improve your everyday routines, and create spaces that inspire</p>
+            <button type="button" id="twoBorder" class="newButton">
+                <div class="in">Explore Our About Us</div>
+            </button>
+        </div>
+
+        <div>
+            <img class="mirror-image" src="images/Gallery/Without Background/12_17_2024 7_05_19 PM.png"   alt="">
+        </div>
+    </section>
+
+
+
+   
+        
+
+    
+<!-- About -->
+
+
+<div id="aboutContainer" class="container-fluid aboutContainer">
+     <!-- Heading Section -->
+     <div class="heading_container heading_center">
+      <h2>
+         About Us
+      </h2>
+   </div><br><br>
+  <div class="row aboutWrapper">
+   
+      <!-- Images Section -->
+      <div class="col-12 col-md-6 aboutImages">
+          <div class="row">
+              <div class="col-12 col-sm-4 aboutImage firstAboutImage">
+                  <img src="https://www.essentialhome.eu/blog/wp-content/uploads/2021/02/Top-20-Luxury-Mirrors-That-Will-Enhance-Your-Home_13-1.jpg" class="img-fluid" alt="Mirror Image 1" />
+              </div>
+              <div class="col-12 col-sm-4 aboutImage">
+                  <img src="https://furnituredirects2u.com/image/cache/catalog/00022foa/5903-220x220.jpg" class="img-fluid" alt="Mirror Image 2" />
+              </div>
+              <div class="col-12 col-sm-4 aboutImage thirdAboutImage">
+                  <img src="https://assets.wfcdn.com/im/27798523/resize-h800-w800%5Ecompr-r85/2899/289908329/Wood+Flat+Wall+Mirror.jpg" class="img-fluid" alt="Mirror Image 3" />
+              </div>
+          </div>
+      </div>
+      
+      <!-- Text Section -->
+      <div class="col-12 col-md-6 aboutTextRight text-white">
+          <h1 class="text-white" id="welcomeHeader">
+              Welcome to <span> <i class="fa-solid fa-a fa-xl  " style="color: rgb(255, 187, 0)"></i> <h1 style="color: white;">CLEAR REFLECTION</h1> </span>
+          </h1>
+          <p>
+              Welcome to Clear Reflection, your premier destination for high-quality mirrors that transform any space. At Clear Reflection, we believe that mirrors are more than just functional objects—they are an essential element of design that enhances the beauty and flow of your home or business. Whether you're looking to brighten up a room, create the illusion of space, or add a touch of elegance, our carefully curated collection of mirrors is crafted to suit every style and need.
+          </p>
+
+        
+      
+      </div>
+  </div>
+</div>
+<!-- About End -->
+
+
+
+
+<!-- footer section -->
+
+<footer>
+  <section class="container-fluid footer_section">
+     <div class="container">
+       <div class="row ">
+         <div class="col-sm-6 col-md-4 col-lg-3 footer-col">
+           <div class="footer_detail">
+             <a class="clear" href="index.html" >
+               <h4 style="color: rgb(255, 196, 0);" >
+                 Clear reflection
+               </h4>
+             </a>
+             <p>
+  
+              At Clear Reflection, our mission is simple: to offer our customers a wide range of premium mirrors that meet the highest standards of quality, design, and affordability.
+  
+              
+             </p>
+  
+  
+             <div  class="social-container ">
+              <a target="_blank" style="color: aliceblue;" href="https://www.facebook.com/profile.php?id=61570070507770&mibextid=JRoKGi" class="social"><i class="fab fa-facebook-f"></i></a>
+              <a target="_blank" style="color: aliceblue;" href="https://www.youtube.com/@ClearReflections-m5c" class="social"><i class="fab fa-google-plus-g"></i></a>
+              <a target="_blank" style="color: aliceblue;" href="https://www.instagram.com/clearreflections7?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" class="social"><i class="fab fa-instagram">   </i></a>
+          </div>
+             
+           </div>
+         </div>
+         <div class="col-sm-6 col-md-4 col-lg-3 mx-auto footer-col">
+           <h4 style="color: rgb(255, 196, 0);">
+             Contact us
+           </h4>
+           <p>
+            We’d love to hear from you! Whether you have a question, need assistance with an order, or want to discuss custom mirror designs, our friendly team is here to help.
+           </p>
+           <div class="contact_nav">
+         
+             <a href="#">
+               <i class="fa fa-phone" aria-hidden="true"></i>
+               <span>
+                 Call : +92 3455678990
+               </span>
+             </a>
+             <a href="#">
+               <i class="fa fa-envelope" aria-hidden="true"></i>
+               <span>
+                 Email : clearreflection@gmail.com
+               </span>
+             </a>
+           </div>
+         </div>
+         <div class="col-md-4 footer-col">
+           <div class="footer_form">
+             <h4 style="color: rgb(255, 196, 0);">
+               SIGN UP TO OUR NEWSLETTER
+             </h4>
+             <form id="subscribe-form">
+              <input type="email" id="email" placeholder="Enter Your Email" required />
+              <button type="submit">Subscribe</button>
+              <p id="status-message"></p> <!-- For displaying subscription status -->
+            </form>
+           </div>
+         </div>
+       </div>
+       <div class="footer-info">
+        
+       </div>
+     </div>
+   </section></footer>
+   <!-- end  footer section -->
+  
+  
+   
+  
+  
+  
+  
+
+  
+
+
+
+<script>   window.addEventListener('load', function() {
+      
+    document.body.classList.add('loaded');
+});
+
+
+
+</script>
+
+
+<script>
+  
+ document.getElementById('twoBorder').addEventListener('click', function() {
+    
+    document.getElementById('aboutContainer').scrollIntoView({
+      behavior: 'smooth',
+      block: 'start'      
+    });
+  });
+
+
+</script>
+
+
+
+<script>// Function to update the cart count in the navigation
+  function updateCartCount() {
+      const cart = JSON.parse(localStorage.getItem('cart')) || [];
+      document.getElementById('cart-count').textContent = cart.length;
+  }
+  
+  // Add event listener to each "Add to Cart" button
+  const addToCartButtons = document.querySelectorAll('.add-to-cart');
+  addToCartButtons.forEach(button => {
+      button.addEventListener('click', function(event) {
+          event.preventDefault();
+  
+          // Get product data from the clicked button's data attributes
+          const productName = this.getAttribute('data-name');
+          const productPrice = this.getAttribute('data-price');
+          const productImg = this.getAttribute('data-img');
+  
+          // Create product object to store in the cart
+          const product = {
+              name: productName,
+              price: productPrice,
+              img: productImg
+          };
+  
+          // Retrieve the current cart from localStorage, or create an empty array if it doesn't exist
+          let cart = JSON.parse(localStorage.getItem('cart')) || [];
+  
+          // Add the new product to the cart
+          cart.push(product);
+  
+          // Save the updated cart back to localStorage
+          localStorage.setItem('cart', JSON.stringify(cart));
+  
+          // Update the cart count
+          updateCartCount();
+  
+          // Optional: Show a confirmation message to the user
+          alert(`${productName} has been added to your cart!`);
+      });
+  });
+  
+  // Update the cart count on page load
+  document.addEventListener('DOMContentLoaded', function() {
+      updateCartCount();
+  });
+  </script>
+  
+<script>
+  // Get the form, email input, and status message elements
+  const form = document.getElementById('subscribe-form');
+  const emailInput = document.getElementById('email');
+  const statusMessage = document.getElementById('status-message');
+
+  // Listen for form submission
+  form.addEventListener('submit', function(event) {
+    event.preventDefault(); // Prevent page reload
+
+    // Get the email value
+    const email = emailInput.value.trim();
+
+    // Basic email validation 
+
+    if (!email || !validateEmail(email)) {
+      alert('You have sucessfully submitted');
+      return;
+      emailInput.value = '';
+    }
+
+    // Simulate a successful subscription
+    statusMessage.textContent = 'You sign up for Newsletter!';
+    statusMessage.style.color = 'green';
+    emailInput.value = '';
+  });
+
+  // Simple email validation function
+  function validateEmail(email) {
+    const emailRegex = /^[\w.-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/
+;
+    return emailRegex.test(email);
+  }
+</script>
+<script>// loader effect
+       
+
+  window.addEventListener('load', function() {
+      // Simulate loading time
+      setTimeout(function() {
+          // Hide the loading spinner
+          document.querySelector('.loading-container').style.display = 'none';
+          // Show the content
+          document.querySelector('.content').style.display = 'block';
+      }, 3000); // Simulate a 3-second delay
+  });
+</script>
+
+
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+<script src="images/js/script.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+</body>
+</html>

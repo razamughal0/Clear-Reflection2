@@ -1,0 +1,1089 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="images/css/styles.css">
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    
+  <link href="css/font-awesome.min.css" rel="stylesheet" />
+
+</head>
+
+<body>
+  
+
+  <style>
+
+/* -------------General Body Styles---------------- */
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-image: url(images/Gallery/Background/12_20_2024\ 9_24_03\ AM.png);
+    background-size: cover;
+    background-position: center;
+    opacity: 0; 
+    transition: opacity 1s ease-in-out; 
+}
+
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('https://png.pngtree.com/background/20230519/original/pngtree-vintage-mirrors-in-a-room-with-many-mirrors-picture-image_2659080.jpg');
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+    z-index: -1;
+    transition: opacity 1s ease-in-out; 
+}
+
+body.loaded {
+    opacity: 1;
+}
+
+
+body.loaded::before {
+    opacity: 0.2; 
+}
+
+
+
+/* -----------General body Style------------- */
+
+  </style>
+
+<header>
+  
+  <!-- Loading Spinner -->
+  <div class="loading-container">
+    <div class="loading-spinner"></div>
+</div>
+
+
+
+    <!-- Header Section -->
+   <!-- Navbar Section -->
+   <nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">
+            <img id="logo1" src="images/Gallery/logo/97759E74-FEB3-4EAB-80D0-E8ED13B462EE-removebg-preview.png" width="25%" alt="">
+        </a>
+        <!-- Navbar Links and Search Form -->
+        <div class="collapse navbar-collapse text-center item9" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a id="nav-link" class="nav-link " href="home.html">Home</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a id="nav-link" class="nav-link" href="Categories.html"  >Categories</a>
+                
+                </li>
+                
+                <li  class="nav-item">
+                    <a id="nav-link1" class="nav-link" href="aboutus.html">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a id="nav-link1" class="nav-link" href="contactus.html">Contact Us</a>
+                </li>
+              
+              
+                  <!-- Cart Icon -->
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        <i class="text-warning fas fa-shopping-cart"></i>
+                        <span class="badge bg-danger" id="cart-count">0</span> <!-- Cart item count -->
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!-- Toggle Button for Mobile -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon "></span>
+        </button>
+    </div>
+</nav>
+
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="main">
+            <h2 class="welcome"><i>Welcome</i></h2>
+            <h1 class="clear-reflection">Clear Reflection!</h1>
+            <p class="para">At Clear Reflection, we believe that mirrors are more than just practical tools—they are essential elements of interior design that enhance any space. Our collection offers a wide variety of high-quality mirrors that combine aesthetic beauty with everyday functionality. Whether you're searching for the perfect wall mirror, a stylish vanity mirror, or a custom creation, we have something for every home and style.</p>
+            <button type="button" id="twoBorder" class="newButton">
+                <div class="in">Explore Our website</div>
+            </button>
+        </div>
+
+        <div>
+            <img class="mirror-image" src="images/Gallery/Without Background/12_17_2024 7_05_19 PM.png"   alt="">
+        </div>
+    </section>
+
+
+
+
+
+
+      
+      <!-- why section -->
+      <section id="why_section" class="why_section layout_padding">
+        <div data-aos="zoom-in-up" class="container">
+           <div class="heading_container heading_center">
+              <h2>
+                 Why Shop With Us
+              </h2>
+           </div>
+           <div class="row">
+              <div class="col-md-4">
+                 <div class="box ">
+                    <div class="img-box">
+                       <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+                          <g>
+                             <g>
+                                <path d="M476.158,231.363l-13.259-53.035c3.625-0.77,6.345-3.986,6.345-7.839v-8.551c0-18.566-15.105-33.67-33.67-33.67h-60.392
+                                   V110.63c0-9.136-7.432-16.568-16.568-16.568H50.772c-9.136,0-16.568,7.432-16.568,16.568V256c0,4.427,3.589,8.017,8.017,8.017
+                                   c4.427,0,8.017-3.589,8.017-8.017V110.63c0-0.295,0.239-0.534,0.534-0.534h307.841c0.295,0,0.534,0.239,0.534,0.534v145.372
+                                   c0,4.427,3.589,8.017,8.017,8.017c4.427,0,8.017-3.589,8.017-8.017v-9.088h94.569c0.008,0,0.014,0.002,0.021,0.002
+                                   c0.008,0,0.015-0.001,0.022-0.001c11.637,0.008,21.518,7.646,24.912,18.171h-24.928c-4.427,0-8.017,3.589-8.017,8.017v17.102
+                                   c0,13.851,11.268,25.119,25.119,25.119h9.086v35.273h-20.962c-6.886-19.883-25.787-34.205-47.982-34.205
+                                   s-41.097,14.322-47.982,34.205h-3.86v-60.393c0-4.427-3.589-8.017-8.017-8.017c-4.427,0-8.017,3.589-8.017,8.017v60.391H192.817
+                                   c-6.886-19.883-25.787-34.205-47.982-34.205s-41.097,14.322-47.982,34.205H50.772c-0.295,0-0.534-0.239-0.534-0.534v-17.637
+                                   h34.739c4.427,0,8.017-3.589,8.017-8.017s-3.589-8.017-8.017-8.017H8.017c-4.427,0-8.017,3.589-8.017,8.017
+                                   s3.589,8.017,8.017,8.017h26.188v17.637c0,9.136,7.432,16.568,16.568,16.568h43.304c-0.002,0.178-0.014,0.355-0.014,0.534
+                                   c0,27.996,22.777,50.772,50.772,50.772s50.772-22.776,50.772-50.772c0-0.18-0.012-0.356-0.014-0.534h180.67
+                                   c-0.002,0.178-0.014,0.355-0.014,0.534c0,27.996,22.777,50.772,50.772,50.772c27.995,0,50.772-22.776,50.772-50.772
+                                   c0-0.18-0.012-0.356-0.014-0.534h26.203c4.427,0,8.017-3.589,8.017-8.017v-85.511C512,251.989,496.423,234.448,476.158,231.363z
+                                   M375.182,144.301h60.392c9.725,0,17.637,7.912,17.637,17.637v0.534h-78.029V144.301z M375.182,230.881v-52.376h71.235
+                                   l13.094,52.376H375.182z M144.835,401.904c-19.155,0-34.739-15.583-34.739-34.739s15.584-34.739,34.739-34.739
+                                   c19.155,0,34.739,15.583,34.739,34.739S163.99,401.904,144.835,401.904z M427.023,401.904c-19.155,0-34.739-15.583-34.739-34.739
+                                   s15.584-34.739,34.739-34.739c19.155,0,34.739,15.583,34.739,34.739S446.178,401.904,427.023,401.904z M495.967,299.29h-9.086
+                                   c-5.01,0-9.086-4.076-9.086-9.086v-9.086h18.171V299.29z" />
+                             </g>
+                          </g>
+                          <g>
+                             <g>
+                                <path d="M144.835,350.597c-9.136,0-16.568,7.432-16.568,16.568c0,9.136,7.432,16.568,16.568,16.568
+                                   c9.136,0,16.568-7.432,16.568-16.568C161.403,358.029,153.971,350.597,144.835,350.597z" />
+                             </g>
+                          </g>
+                          <g>
+                             <g>
+                                <path d="M427.023,350.597c-9.136,0-16.568,7.432-16.568,16.568c0,9.136,7.432,16.568,16.568,16.568
+                                   c9.136,0,16.568-7.432,16.568-16.568C443.591,358.029,436.159,350.597,427.023,350.597z" />
+                             </g>
+                          </g>
+                          <g>
+                             <g>
+                                <path d="M332.96,316.393H213.244c-4.427,0-8.017,3.589-8.017,8.017s3.589,8.017,8.017,8.017H332.96
+                                   c4.427,0,8.017-3.589,8.017-8.017S337.388,316.393,332.96,316.393z" />
+                             </g>
+                          </g>
+                          <g>
+                             <g>
+                                <path d="M127.733,282.188H25.119c-4.427,0-8.017,3.589-8.017,8.017s3.589,8.017,8.017,8.017h102.614
+                                   c4.427,0,8.017-3.589,8.017-8.017S132.16,282.188,127.733,282.188z" />
+                             </g>
+                          </g>
+                          <g>
+                             <g>
+                                <path d="M278.771,173.37c-3.13-3.13-8.207-3.13-11.337,0.001l-71.292,71.291l-37.087-37.087c-3.131-3.131-8.207-3.131-11.337,0
+                                   c-3.131,3.131-3.131,8.206,0,11.337l42.756,42.756c1.565,1.566,3.617,2.348,5.668,2.348s4.104-0.782,5.668-2.348l76.96-76.96
+                                   C281.901,181.576,281.901,176.501,278.771,173.37z" />
+                             </g>
+                          </g>
+                          <g>
+                          </g>
+                          <g>
+                          </g>
+                          <g>
+                          </g>
+                          <g>
+                          </g>
+                          <g>
+                          </g>
+                          <g>
+                          </g>
+                          <g>
+                          </g>
+                          <g>
+                          </g>
+                          <g>
+                          </g>
+                          <g>
+                          </g>
+                          <g>
+                          </g>
+                          <g>
+                          </g>
+                          <g>
+                          </g>
+                          <g>
+                          </g>
+                          <g>
+                          </g>
+                       </svg>
+                    </div>
+                    <div class="detail-box">
+                       <h5>
+                          Fast Delivery
+
+                       </h5>
+                       <p>
+                        We pride ourselves on our fast, efficient service to make sure you can start enjoying your new mirror as soon as possible.If you have any questions about our delivery process.
+                       </p>
+                    </div>
+                 </div>
+              </div>
+              <div class="col-md-4">
+                 <div class="box box2 ">
+                    <div class="img-box">
+                       <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 490.667 490.667" style="enable-background:new 0 0 490.667 490.667;" xml:space="preserve">
+                          <g>
+                             <g>
+                                <path fill="black"  d="M138.667,192H96c-5.888,0-10.667,4.779-10.667,10.667V288c0,5.888,4.779,10.667,10.667,10.667s10.667-4.779,10.667-10.667
+                                   v-74.667h32c5.888,0,10.667-4.779,10.667-10.667S144.555,192,138.667,192z" />
+                             </g>
+                          </g>
+                          <g>
+                             <g>
+                                <path fill="black"  d="M117.333,234.667H96c-5.888,0-10.667,4.779-10.667,10.667S90.112,256,96,256h21.333c5.888,0,10.667-4.779,10.667-10.667
+                                   S123.221,234.667,117.333,234.667z" />
+                             </g>
+                          </g>
+                          <g>
+                             <g>
+                                <path fill="black"  d="M245.333,0C110.059,0,0,110.059,0,245.333s110.059,245.333,245.333,245.333s245.333-110.059,245.333-245.333
+                                   S380.608,0,245.333,0z M245.333,469.333c-123.52,0-224-100.48-224-224s100.48-224,224-224s224,100.48,224,224
+                                   S368.853,469.333,245.333,469.333z" />
+                             </g>
+                          </g>
+                          <g>
+                             <g>
+                                <path fill="black"  d="M386.752,131.989C352.085,88.789,300.544,64,245.333,64s-106.752,24.789-141.419,67.989
+                                   c-3.691,4.587-2.965,11.307,1.643,14.997c4.587,3.691,11.307,2.965,14.976-1.643c30.613-38.144,76.096-60.011,124.8-60.011
+                                   s94.187,21.867,124.779,60.011c2.112,2.624,5.205,3.989,8.32,3.989c2.368,0,4.715-0.768,6.677-2.347
+                                   C389.717,143.296,390.443,136.576,386.752,131.989z" />
+                             </g>
+                          </g>
+                          <g>
+                             <g>
+                                <path fill="black"  d="M376.405,354.923c-4.224-4.032-11.008-3.861-15.061,0.405c-30.613,32.235-71.808,50.005-116.011,50.005
+                                   s-85.397-17.771-115.989-50.005c-4.032-4.309-10.816-4.437-15.061-0.405c-4.309,4.053-4.459,10.816-0.405,15.083
+                                   c34.667,36.544,81.344,56.661,131.456,56.661s96.789-20.117,131.477-56.661C380.864,365.739,380.693,358.976,376.405,354.923z" />
+                             </g>
+                          </g>
+                          <g>
+                             <g>
+                                <path fill="black"  d="M206.805,255.723c15.701-2.027,27.861-15.488,27.861-31.723c0-17.643-14.357-32-32-32h-21.333
+                                   c-5.888,0-10.667,4.779-10.667,10.667v42.581c0,0.043,0,0.107,0,0.149V288c0,5.888,4.779,10.667,10.667,10.667
+                                   S192,293.888,192,288v-16.917l24.448,24.469c2.091,2.069,4.821,3.115,7.552,3.115c2.731,0,5.461-1.045,7.531-3.136
+                                   c4.16-4.16,4.16-10.923,0-15.083L206.805,255.723z M192,234.667v-21.333h10.667c5.867,0,10.667,4.779,10.667,10.667
+                                   s-4.8,10.667-10.667,10.667H192z" />
+                             </g>
+                          </g>
+                          <g>
+                             <g>
+                                <path fill="black"  d="M309.333,277.333h-32v-64h32c5.888,0,10.667-4.779,10.667-10.667S315.221,192,309.333,192h-42.667
+                                   c-5.888,0-10.667,4.779-10.667,10.667V288c0,5.888,4.779,10.667,10.667,10.667h42.667c5.888,0,10.667-4.779,10.667-10.667
+                                   S315.221,277.333,309.333,277.333z" />
+                             </g>
+                          </g>
+                          <g>
+                             <g>
+                                <path fill="black"  d="M288,234.667h-21.333c-5.888,0-10.667,4.779-10.667,10.667S260.779,256,266.667,256H288
+                                   c5.888,0,10.667-4.779,10.667-10.667S293.888,234.667,288,234.667z" />
+                             </g>
+                          </g>
+                          <g>
+                             <g>
+                                <path fill="black"  d="M394.667,277.333h-32v-64h32c5.888,0,10.667-4.779,10.667-10.667S400.555,192,394.667,192H352
+                                   c-5.888,0-10.667,4.779-10.667,10.667V288c0,5.888,4.779,10.667,10.667,10.667h42.667c5.888,0,10.667-4.779,10.667-10.667
+                                   S400.555,277.333,394.667,277.333z" />
+                             </g>
+                          </g>
+                          <g>
+                             <g>
+                                <path fill="black" d="M373.333,234.667H352c-5.888,0-10.667,4.779-10.667,10.667S346.112,256,352,256h21.333
+                                   c5.888,0,10.667-4.779,10.667-10.667S379.221,234.667,373.333,234.667z" />
+                             </g>
+                          </g>
+                          <g>
+                          </g>
+                          <g>
+                          </g>
+                          <g>
+                          </g>
+                          <g>
+                          </g>
+                          <g>
+                          </g>
+                          <g>
+                          </g>
+                          <g>
+                          </g>
+                          <g>
+                          </g>
+                          <g>
+                          </g>
+                          <g>
+                          </g>
+                          <g>
+                          </g>
+                          <g>
+                          </g>
+                          <g>
+                          </g>
+                          <g>
+                          </g>
+                          <g>
+                          </g>
+                       </svg>
+                    </div>
+                    <div class="detail-box">
+                       <h5>
+                          Free Shiping
+                       </h5>
+                       <p>
+                        At Clear Reflection, we want your shopping experience to be as smooth and rewarding as possible. Take advantage of our free shipping offer and start designing your dream space today
+                       </p>
+                    </div>
+                 </div>
+              </div>
+              <div class="col-md-4">
+                 <div class="box ">
+                    <div class="img-box">
+                       <svg id="_30_Premium" height="512" viewBox="0 0 512 512" width="512" xmlns="http://www.w3.org/2000/svg" data-name="30_Premium">
+                          <g id="filled">
+                             <path d="m252.92 300h3.08a124.245 124.245 0 1 0 -4.49-.09c.075.009.15.023.226.03.394.039.789.06 1.184.06zm-96.92-124a100 100 0 1 1 100 100 100.113 100.113 0 0 1 -100-100z" />
+                             <path d="m447.445 387.635-80.4-80.4a171.682 171.682 0 0 0 60.955-131.235c0-94.841-77.159-172-172-172s-172 77.159-172 172c0 73.747 46.657 136.794 112 161.2v158.8c-.3 9.289 11.094 15.384 18.656 9.984l41.344-27.562 41.344 27.562c7.574 5.4 18.949-.7 18.656-9.984v-70.109l46.6 46.594c6.395 6.789 18.712 3.025 20.253-6.132l9.74-48.724 48.725-9.742c9.163-1.531 12.904-13.893 6.127-20.252zm-339.445-211.635c0-81.607 66.393-148 148-148s148 66.393 148 148-66.393 148-148 148-148-66.393-148-148zm154.656 278.016a12 12 0 0 0 -13.312 0l-29.344 19.562v-129.378a172.338 172.338 0 0 0 72 0v129.38zm117.381-58.353a12 12 0 0 0 -9.415 9.415l-6.913 34.58-47.709-47.709v-54.749a171.469 171.469 0 0 0 31.467-15.6l67.151 67.152z" />
+                             <path d="m287.62 236.985c8.349 4.694 19.251-3.212 17.367-12.618l-5.841-35.145 25.384-25c7.049-6.5 2.89-19.3-6.634-20.415l-35.23-5.306-15.933-31.867c-4.009-8.713-17.457-8.711-21.466 0l-15.933 31.866-35.23 5.306c-9.526 1.119-13.681 13.911-6.634 20.415l25.384 25-5.841 35.145c-1.879 9.406 9 17.31 17.367 12.618l31.62-16.414zm-53-32.359 2.928-17.615a12 12 0 0 0 -3.417-10.516l-12.721-12.531 17.658-2.66a12 12 0 0 0 8.947-6.5l7.985-15.971 7.985 15.972a12 12 0 0 0 8.947 6.5l17.658 2.66-12.723 12.535a12 12 0 0 0 -3.417 10.516l2.928 17.615-15.849-8.231a12 12 0 0 0 -11.058 0z" />
+                          </g>
+                       </svg>
+                    </div>
+                    <div class="detail-box">
+                       <h5>
+                          Best Quality
+                       </h5>
+                       <p>
+                        We stand behind the quality of our mirrors. If you’re not completely satisfied with your purchase, our customer support team is always ready to assist with returns or exchanges.
+                       </p>
+                    </div>
+                 </div><br><br>
+              </div>
+           </div>
+        </div>
+     </section>
+     <!-- end why section -->
+
+
+<!-- 
+Our gallery -->
+
+
+<div class="ourgallery">
+
+<div class="heading_container ">
+  <h2>
+  Our gallery
+  </h2>
+  <p class="text-white  text-center">Our Gallery stunning collection of mirrors, designed to elevate any space. From modern minimalism to timeless elegance, find the perfect mirror to suit your style.</p>
+</div>
+
+
+
+<div class="container4">
+  <div class="item4"><img src="https://i.pinimg.com/736x/54/17/85/54178515757650f4db7a7a81ade65a0d.jpg" alt=""></div>
+  <div class="item4"><img src="https://i.pinimg.com/736x/8a/d2/72/8ad2727e1fb9ae398ba0983421110227.jpg" alt=""></div>
+  <div class="item4"><img src="https://i.pinimg.com/736x/2f/33/6c/2f336c9076717788c8431ecd57431ff8.jpg" alt=""></div>
+ 
+
+</div><br><br><br><br><br><br>
+
+<!-- 
+End Our gallery
+      -->
+
+
+
+
+
+
+      
+     
+	<!-- new collection section start -->
+
+  <div class="main-collection">
+
+    <div class="layout_padding collection_section">
+      <div class="container">
+        
+          <div class="heading_container heading_center">
+            <h2>
+            New Collection
+            </h2>
+         </div>
+
+          <p class="consectetur_text ">Introducing our latest collection of mirrors that enhance every room. Crafted with precision, designed for beauty.</p>
+          <div class="collection_section_2">
+             <div class="row">
+                <div class="col-md-6">
+                   <div class="about-img"> <br>
+                      <button class="new_bt">New</button>
+                      <div class="mirror-img"><img src="https://static.vecteezy.com/system/resources/previews/048/332/546/non_2x/small-ornate-mirror-on-transparent-background-free-png.png" width="660px" ></div>
+                      <p class="Rounded-Mirror">Rounded Mirror</p>
+                      <div class="dolar_text">$<strong style="color: #000000;">90</strong> </div>
+                     
+                   </div>
+            
+                </div>
+                <div class="col-md-6">
+                   <div class="about-img2">
+                      <div class="mirror-img2"><img src="https://png.pngtree.com/png-vector/20241102/ourmid/pngtree-ornate-gold-mirror-frame-clipart-free-png-image_14238112.png"></div>
+                      <p class="Rounded-Mirror">Square Mirror</p>
+                      <div class="dolar_text">$<strong style="color: #000000;">89</strong> </div>
+                     
+                   </div>
+                </div>
+             </div>
+          </div>
+      </div>
+   </div>
+  </div>
+  
+  <!-- new collection section end -->
+
+<!-- Product Section -->
+<section class="product_section layout_padding ">
+   <div class="container">
+     <div class="heading_container heading_center">
+       <h2>
+         Our <span>Products</span>
+       </h2>
+       <p class="text-center text-white">At Clear Reflection, we offer a wide range of high-quality mirrors designed to enhance any space. Explore our diverse collection</p>
+     </div>
+ 
+     <div class="row">
+       <!-- Product Item 1 -->
+       <div class="col-sm-6 col-md-4 col-lg-4">
+         <div class="box">
+           <div class="discount-badge">15% OFF</div>
+           <div class="option_container">
+             <div class="options">
+               <a id="cart9" href="#" class="option1 add-to-cart" data-name="Coral Luxurious Gold Metal Mirror" data-price="$125" data-img="https://www.crosby.co.in/wp-content/uploads/2024/04/1000051834.jpg">Add to Cart</a>
+         
+             </div>
+           </div>
+           <div class="img-box">
+             <img src="https://www.crosby.co.in/wp-content/uploads/2024/04/1000051834.jpg" alt="Rounded Mirror" class="img-fluid">
+           </div>
+           <div class="detail-box">
+             <h4>Coral Luxurious Gold Metal Mirror</h4>
+             <h5>Price:</h5>
+             <h6 class="price">Rs 15000.00</h6>
+           </div>
+         </div>
+       </div>
+       
+       <!-- Product Item 2 -->
+       <div class="col-sm-6 col-md-4 col-lg-4">
+         <div class="box">
+           <div class="discount-badge">15% OFF</div>
+           <div class="option_container">
+             <div class="options">
+               <a href="#" id="cart9" class="option1 add-to-cart" data-name="Luxury Metal Decorative  Mirror" data-price="$100" data-img="https://m.media-amazon.com/images/I/711f1ze9xpL._AC_UF1000,1000_QL80_.jpg">Add to Cart</a>
+              
+             </div>
+           </div>
+           <div class="img-box">
+             <img src="https://m.media-amazon.com/images/I/711f1ze9xpL._AC_UF1000,1000_QL80_.jpg" alt="Cabinet Mirror" class="img-fluid">
+           </div>
+           <div class="detail-box">
+             <h4>Luxury Metal Decorative  Mirror</h4>
+             <h5>Price:</h5>
+             <h6 class="price">Rs 12000.00</h6>
+           </div>
+         </div>
+       </div>
+       
+       <!-- Add more products here as needed -->
+       <!-- Product Item 3 -->
+       <div class="col-sm-6 col-md-4 col-lg-4">
+         <div class="box">
+           <div class="discount-badge">15% OFF</div>
+           <div class="option_container">
+             <div class="options">
+               <a href="#" id="cart9" class="option1 add-to-cart" data-name="Luxury LED Lighting Mirror" data-price="$160" data-img="https://m.media-amazon.com/images/I/91fayCLAdrL._AC_UF894,1000_QL80_.jpg">Add to Cart</a>
+             
+             </div>
+           </div>
+           <div class="img-box">
+             <img src="https://m.media-amazon.com/images/I/91fayCLAdrL._AC_UF894,1000_QL80_.jpg" alt="Cabinet Mirror" class="img-fluid">
+           </div>
+           <div class="detail-box">
+             <h4>Luxury LED Lighting Mirror</h4>
+             <h5>Price:</h5>
+             <h6 class="price">Rs 16000.00</h6>
+           </div>
+         </div>
+       </div>
+       
+       <!-- Add more products here as needed -->
+       <!-- Product Item 4 -->
+       <div class="col-sm-6 col-md-4 col-lg-4">
+         <div class="box">
+           <div class="discount-badge">15% OFF</div>
+           <div class="option_container">
+             <div class="options">
+               <a href="#" id="cart9" class="option1 add-to-cart" data-name="Luxury HalfCircle LED Mirror" data-price="$110" data-img="https://artforma-mirrors.co.uk/files/thumbs/produkty/OKRHE221/9.jpg/900_900_scale-down.jpg?ts=1703744616&pn=product_biggest">Add to Cart</a>
+             
+             </div>
+           </div>
+           <div class="img-box">
+             <img src="https://artforma-mirrors.co.uk/files/thumbs/produkty/OKRHE221/9.jpg/900_900_scale-down.jpg?ts=1703744616&pn=product_biggest" alt="Cabinet Mirror" class="img-fluid">
+           </div>
+           <div class="detail-box">
+             <h4>Luxury HalfCircle LED Mirror</h4>
+             <h5>Price:</h5>
+             <h6 class="price">Rs 11110.00</h6>
+           </div>
+         </div>
+       </div>
+       
+       <!-- Add more products here as needed -->
+       <!-- Product Item 5 -->
+       <div class="col-sm-6 col-md-4 col-lg-4">
+         <div class="box">
+           <div class="discount-badge">15% OFF</div>
+           <div class="option_container">
+             <div class="options">
+               <a href="#" id="cart9" class="option1 add-to-cart" data-name="Simple Rounded LED Wall Mirror" data-price="$80" data-img="https://m.media-amazon.com/images/I/71DzCZiZY-L._AC_UF1000,1000_QL80_.jpg">Add to Cart</a>
+ 
+             </div>
+           </div>
+           <div class="img-box">
+             <img src="https://m.media-amazon.com/images/I/71DzCZiZY-L._AC_UF1000,1000_QL80_.jpg" alt="Cabinet Mirror" class="img-fluid">
+           </div>
+           <div class="detail-box">
+             <h4>Simple Rounded LED Wall Mirror</h4>
+             <h5>Price:</h5>
+             <h6 class="price">Rs 18000.00</h6>
+           </div>
+         </div>
+       </div>
+       
+       <!-- Add more products here as needed -->
+       <!-- Product Item6 -->
+       <div class="col-sm-6 col-md-4 col-lg-4">
+         <div class="box">
+           <div class="discount-badge">15% OFF</div>
+           <div class="option_container">
+             <div class="options">
+               <a href="#" id="cart9" class="option1 add-to-cart" data-name="Luxury Rounded Golden Mirror" data-price="$140" data-img="https://i.pinimg.com/564x/13/aa/4a/13aa4a1f5968c8341222a5aa18e2e17b.jpg">Add to Cart</a>
+           
+             </div>
+           </div>
+           <div class="img-box">
+             <img src="https://i.pinimg.com/564x/13/aa/4a/13aa4a1f5968c8341222a5aa18e2e17b.jpg" alt="Cabinet Mirror" class="img-fluid">
+           </div>
+           <div class="detail-box">
+             <h4>Luxury Rounded Golden Mirror</h4>
+             <h5>Price:</h5>
+             <h6 class="price">Rs 14000.00</h6>
+           </div>
+         </div>
+       </div>
+       
+       <!-- Add more products here as needed -->
+       <!-- Product Item7 -->
+       <div class="col-sm-6 col-md-4 col-lg-4">
+         <div class="box">
+           <div class="discount-badge">15% OFF</div>
+           <div class="option_container">
+             <div class="options">
+               <a href="#" id="cart9" class="option1 add-to-cart" data-name="Luxury Square design Mirror" data-price="$160" data-img="https://i.pinimg.com/236x/45/3b/80/453b80b5ab0a4b5bfbe22279f3c3c845.jpg">Add to Cart</a>
+           
+             </div>
+           </div>
+           <div class="img-box">
+             <img src="https://i.pinimg.com/236x/45/3b/80/453b80b5ab0a4b5bfbe22279f3c3c845.jpg" alt="Cabinet Mirror" class="img-fluid">
+           </div>
+           <div class="detail-box">
+             <h4>Luxury Square design Mirror</h4>
+             <h5>Price:</h5>
+             <h6 class="price">Rs 16600.00</h6>
+           </div>
+         </div>
+       </div>
+       
+       <!-- Add more products here as needed -->
+       <!-- Product Item8 -->
+       <div class="col-sm-6 col-md-4 col-lg-4">
+         <div class="box">
+           <div class="discount-badge">15% OFF</div>
+           <div class="option_container">
+             <div class="options">
+               <a href="#" id="cart9" class="option1 add-to-cart" data-name="Rounded Shabby Iron Mirror" data-price="$150" data-img="https://m.media-amazon.com/images/I/61irvGpTT-S._AC_UF350,350_QL80_.jpg">Add to Cart</a>
+           
+             </div>
+           </div>
+           <div class="img-box">
+             <img src="https://m.media-amazon.com/images/I/61irvGpTT-S._AC_UF350,350_QL80_.jpg" alt="Cabinet Mirror" class="img-fluid">
+           </div>
+           <div class="detail-box">
+             <h4>Rounded Shabby Iron Mirror</h4>
+             <h5>Price:</h5>
+             <h6 class="price">Rs 15050.00</h6>
+           </div>
+         </div>
+       </div>
+       
+       <!-- Add more products here as needed -->
+       <!-- Product Item9-->
+       <div class="col-sm-6 col-md-4 col-lg-4">
+         <div class="box">
+           <div class="discount-badge">15% OFF</div>
+           <div class="option_container">
+             <div class="options">
+               <a href="#" id="cart9" class="option1 add-to-cart" data-name="Baroque Curved Wall Mirror Mirror"  data-price="$40" data-img="https://www.misscitystyle.com.au/media/catalog/product/cache/a7829b3a6ba066a6e0c69d75b570675d/a/q/aql-049-silver-1.jpeg">Add to Cart</a>
+        
+             </div>
+           </div>
+           <div class="img-box">
+             <img src="https://www.misscitystyle.com.au/media/catalog/product/cache/a7829b3a6ba066a6e0c69d75b570675d/a/q/aql-049-silver-1.jpeg" alt="Cabinet Mirror" class="img-fluid">
+           </div>
+           <div class="detail-box">
+             <h4>Baroque Curved Wall Mirror Mirror</h4>
+             <h5>Price:</h5>
+             <h6 class="price">Rs 14400.00</h6>
+           </div>
+         </div>
+       </div>
+       
+       <!-- Add more products here as needed -->
+ 
+     </div>
+   </div>
+</section>
+<!-- End Product Section -->
+
+
+<br><br><br>
+
+  
+     
+<!-- --------special offer-------------- -->
+
+
+
+<section class="offer section">
+  <div class="offer__container text-white">
+    <div class="offer__data">
+      <h2 class="section__title offer__title">
+        Do You Want To Receive <br> Special Offers?
+      </h2>
+
+      <p class="offer__description">
+        Be the first to receive all the information about our products <br> and new mirror by email by subscribing to our mailing list.
+      </p> <br><br><br>
+
+      <!-- Email input field with validation -->
+      <form id="subscribeForm">
+    
+        <input class="email1" type="email" id="email" name="email" placeholder="Enter your email" required>
+
+        <button type="submit" class="nav-link2">Subscribe Now</button>
+      </form>
+    </div>
+
+    <img src="https://png.pngtree.com/png-vector/20240414/ourmid/pngtree-luxury-mirror-with-flowers-border-png-image_12287875.png" alt="Luxury Mirror" class="offer__img">
+  </div>
+</section>
+<br><br><br>
+
+
+
+
+
+  <!-- offer section -->
+
+  <section class="offer_section layout_padding">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-7 px-0">
+          <div class="box offer-box1">
+            <img src="https://www.js.co.nz/img/stock/4545/large/206A1625.jpg" alt="">
+            <div class="detail-box">
+              <h2>
+                Upto 15% Off
+              </h2>
+              <a href="singlecart1.html">
+                Shop Now
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-5 px-0">
+          <div class="box offer-box2">
+            <img src="https://www.nickjones.london/upload/images/shopprod/11392/c1950-a-wonderful-french-landscape-mirror_11392_main_size3.jpg" alt="">
+            <div class="detail-box">
+              <h2>
+                Upto 10% Off
+              </h2>
+              <a href="singlecart11.html">
+                Shop Now
+              </a>
+            </div>
+          </div>
+          <div class="box offer-box3">
+            <img src="https://t3.ftcdn.net/jpg/10/01/50/76/360_F_1001507677_Gvg9Vzx4nkKrbuxGI9dHaL16nIKn2mZo.jpg" alt="">
+            <div class="detail-box">
+              <h2>
+                Upto 20% Off
+              </h2>
+              <a href="singlecart3.html">
+                Shop Now
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- end offer section -->
+
+
+
+
+
+<!-- Start Blog  -->
+<div class="latest-blog">
+   <div class="container">
+       <div class="row">
+           <div class="col-lg-12">
+               <div class="title-all text-center">
+
+                  <div class="heading_container heading_center">
+                     <h2>
+                       Latest <span>Blog</span>
+                     </h2>
+                   </div>
+
+                 
+                   <p>At Clear Reflection, we understand that mirrors are more than just functional items in your home; they’re pieces of art that can transform your space. Whether you’re looking to add light, create the illusion of space, or simply find the perfect statement piece for your decor, our collection of mirrors offers something for everyon</p>
+               </div>
+           </div>
+       </div>
+       <div class="row">
+           <div class="col-md-6 col-lg-4 col-xl-4">
+               <div class="blog-box">
+                   <div class="blog-img">
+                       <img  class="img-fluid" src="https://i.pinimg.com/736x/bd/f0/6b/bdf06b638dd1b9580ced508b55bfa16d.jpg" alt=""  />
+                   </div>
+                   <div class="blog-content">
+                       <div class="title-blog">
+                           <h3>Versatility in Design</h3>
+                           <p>From minimalist modern styles to intricate vintage designs, our mirrors are crafted to complement any room in your home. No matter your aesthetic, you’ll find a mirror that reflects your unique taste.</p>
+                       </div>
+                     
+                   </div>
+               </div>
+           </div>
+           <div class="col-md-6 col-lg-4 col-xl-4">
+               <div class="blog-box">
+                   <div class="blog-img">
+                       <img class="img-fluid" src="https://images.squarespace-cdn.com/content/v1/4fcf5c8684aef9ce6e0a44b0/1458586255551-6DTS6WME6NWMO85N5DO4/Tall+bathroom+mirrors" alt="" />
+                   </div>
+                   <div class="blog-content">
+                       <div class="title-blog">
+                           <h3>Enhancing the Feel of Your Space</h3>
+                           <p>Mirrors have the power to make a room feel larger, brighter, and more inviting. Whether you’re working with a cozy apartment or a spacious living room, the right mirror can elevate your space in an instant.</p>
+                       </div>
+                     
+                   </div>
+               </div>
+           </div>
+           <div class="col-md-6 col-lg-4 col-xl-4">
+               <div class="blog-box">
+                   <div class="blog-img">
+                       <img class="img-fluid" src="https://www.vonn.com/cdn/shop/articles/VMRH0320TW_IMAGE_2_600x.jpg?v=1651185173" alt="" />
+                   </div>
+                   <div class="blog-content">
+                       <div class="title-blog">
+                           <h3>Quality Craftsmanship:</h3>
+                           <p>At Clear Reflection, we pride ourselves on offering only the highest-quality mirrors. Each piece is carefully crafted using premium materials to ensure long-lasting beauty and functionality.</p>
+                       </div>
+                     
+                   </div>
+               </div>
+           </div>
+       </div>
+   </div>
+</div>
+<!-- End Blog  -->
+
+
+
+<!-- footer section -->
+
+<footer>
+<section class="container-fluid footer_section">
+   <div class="container">
+     <div class="row ">
+       <div class="col-sm-6 col-md-4 col-lg-3 footer-col">
+         <div class="footer_detail">
+           <a class="clear" href="index.html" >
+             <h4 style="color: rgb(255, 196, 0);" >
+               Clear reflection
+             </h4>
+           </a>
+           <p>
+
+            At Clear Reflection, our mission is simple: to offer our customers a wide range of premium mirrors that meet the highest standards of quality, design, and affordability.
+
+            
+           </p>
+
+
+           <div  class="social-container ">
+            <a style="color: aliceblue;" href="https://www.facebook.com/profile.php?id=61570070507770&mibextid=JRoKGi" target="_blank" class="social"><i class="fab fa-facebook-f"></i></a>
+            <a  target="_blank"  style="color: aliceblue;" href="https://www.youtube.com/@ClearReflections-m5c" class="social"><i class="fab fa-google-plus-g"></i></a>
+            <a  target="_blank"  style="color: aliceblue;" href="https://www.instagram.com/clearreflections7?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" class="social"><i class="fab fa-instagram">   </i></a>
+        </div>
+           
+         </div>
+       </div>
+       <div class="col-sm-6 col-md-4 col-lg-3 mx-auto footer-col">
+         <h4 style="color: rgb(255, 196, 0);">
+           Contact us
+         </h4>
+         <p>
+          We’d love to hear from you! Whether you have a question, need assistance with an order, or want to discuss custom mirror designs, our friendly team is here to help.
+         </p>
+         <div class="contact_nav">
+         
+           <a href="#">
+             <i class="fa fa-phone" aria-hidden="true"></i>
+             <span>
+               Call : +92 3455678990
+             </span>
+           </a>
+           <a href="#">
+             <i class="fa fa-envelope" aria-hidden="true"></i>
+             <span>
+               Email : clearreflection@gmail.com
+             </span>
+           </a>
+         </div>
+       </div>
+       <div class="col-md-4 footer-col">
+         <div class="footer_form">
+           <h4 style="color: rgb(255, 196, 0);">
+             SIGN UP TO OUR NEWSLETTER
+           </h4>
+           <form id="subscribe-form">
+            <input type="email" id="email" placeholder="Enter Your Email" required />
+            <button type="submit">Subscribe</button>
+            <p id="status-message"></p> <!-- For displaying subscription status -->
+          </form>
+         </div>
+       </div>
+     </div>
+     <div class="footer-info">
+      
+     </div>
+   </div>
+ </section></footer>
+ <!-- end  footer section -->
+
+
+ 
+
+
+
+
+<script>
+   window.addEventListener('load', function() {
+      
+       document.body.classList.add('loaded');
+   });
+
+
+
+ document.getElementById('twoBorder').addEventListener('click', function() {
+    
+      document.getElementById('why_section').scrollIntoView({
+        behavior: 'smooth',
+        block: 'start'      
+      });
+    });
+ document.getElementById('cart9').addEventListener('click', function() {
+    
+      document.getElementById('twoBorder').scrollIntoView({
+        behavior: 'smooth',
+        block: 'start'      
+      });
+    });
+
+
+
+   </script>
+
+<script>// JavaScript for form validation
+document.getElementById('subscribeForm').addEventListener('submit', function(e) {
+  e.preventDefault();
+  
+  const email = document.getElementById('email').value;
+  
+  if (validateEmail(email)) {
+    alert('Thank you for subscribing!');
+    // Here you can handle the subscription process, e.g., send the email data to your server
+    // Reset the form
+    document.getElementById('subscribeForm').reset();
+  } else {
+    alert('Please enter a valid email address.');
+  }
+});
+
+// Email validation function
+function validateEmail(email) {
+  const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  return regex.test(email);
+}
+</script>
+
+<script>
+  // Get the form, email input, and status message elements
+  const form = document.getElementById('subscribe-form');
+  const emailInput = document.getElementById('email');
+  const statusMessage = document.getElementById('status-message');
+
+  // Listen for form submission
+  form.addEventListener('submit', function(event) {
+    event.preventDefault(); // Prevent page reload
+
+    // Get the email value
+    const email = emailInput.value.trim();
+
+    // Basic email validation 
+
+    if (!email || !validateEmail(email)) {
+      alert('You have sucessfully submitted');
+      return;
+      emailInput.value = '';
+    }
+
+    // Simulate a successful subscription
+    statusMessage.textContent = 'You sign up for Newsletter!';
+    statusMessage.style.color = 'green';
+    emailInput.value = '';
+  });
+
+  // Simple email validation function
+  function validateEmail(email) {
+    const emailRegex = /^[\w.-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/
+;
+    return emailRegex.test(email);
+  }
+</script>
+
+<script>// loader effect
+       
+
+  window.addEventListener('load', function() {
+      // Simulate loading time
+      setTimeout(function() {
+          // Hide the loading spinner
+          document.querySelector('.loading-container').style.display = 'none';
+          // Show the content
+          document.querySelector('.content').style.display = 'block';
+      }, 3000); // Simulate a 3-second delay
+  });
+</script>
+
+
+
+
+
+
+
+
+<script>// Function to update the cart count in the navigation
+  function updateCartCount() {
+      const cart = JSON.parse(localStorage.getItem('cart')) || [];
+      document.getElementById('cart-count').textContent = cart.length;
+  }
+  
+  // Add event listener to each "Add to Cart" button
+  const addToCartButtons = document.querySelectorAll('.add-to-cart');
+  addToCartButtons.forEach(button => {
+      button.addEventListener('click', function(event) {
+          event.preventDefault();
+  
+          // Get product data from the clicked button's data attributes
+          const productName = this.getAttribute('data-name');
+          const productPrice = this.getAttribute('data-price');
+          const productImg = this.getAttribute('data-img');
+  
+          // Create product object to store in the cart
+          const product = {
+              name: productName,
+              price: productPrice,
+              img: productImg
+          };
+  
+          // Retrieve the current cart from localStorage, or create an empty array if it doesn't exist
+          let cart = JSON.parse(localStorage.getItem('cart')) || [];
+  
+          // Add the new product to the cart
+          cart.push(product);
+  
+          // Save the updated cart back to localStorage
+          localStorage.setItem('cart', JSON.stringify(cart));
+  
+          // Update the cart count
+          updateCartCount();
+  
+          // Optional: Show a confirmation message to the user
+          alert(`${productName} has been added to your cart!`);
+      });
+  });
+  
+  // Update the cart count on page load
+  document.addEventListener('DOMContentLoaded', function() {
+      updateCartCount();
+  });
+  </script>
+  
+
+
+<script src="images/js/script.js"></script>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<script>
+  AOS.init();
+</script>
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+</body>
+</html>

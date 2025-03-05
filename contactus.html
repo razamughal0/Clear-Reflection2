@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="images/Gallery/logo/97759E74-FEB3-4EAB-80D0-E8ED13B462EE-removebg-preview.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="images/css/styles.css">
+    
+
+</head>
+
+
+<style>
+
+/* -------------General Body Styles---------------- */
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-image: url(images/Gallery/Background/12_20_2024\ 9_24_03\ AM.png);
+    background-size: cover;
+    background-position: center;
+    opacity: 0; 
+    transition: opacity 1s ease-in-out; 
+}
+
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('https://png.pngtree.com/background/20230519/original/pngtree-vintage-mirrors-in-a-room-with-many-mirrors-picture-image_2659080.jpg');
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+    z-index: -1;
+    transition: opacity 1s ease-in-out; 
+}
+
+body.loaded {
+    opacity: 1;
+}
+
+
+body.loaded::before {
+    opacity: 0.2; 
+}
+
+
+
+</style>
+<body>
+
+    <div class="body">
+
+     
+  <!-- Loading Spinner -->
+  <div class="loading-container">
+    <div class="loading-spinner"></div>
+</div>
+
+        
+
+    <!-- Header Section -->
+   <!-- Navbar Section -->
+   <nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">
+            <img id="logo1" src="images/Gallery/logo/97759E74-FEB3-4EAB-80D0-E8ED13B462EE-removebg-preview.png" width="25%" alt="">
+        </a>
+        <!-- Navbar Links and Search Form -->
+        <div class="collapse navbar-collapse text-center item9" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a id="nav-link" class="nav-link " href="home.html">Home</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a id="nav-link" class="nav-link" href="Categories.html">Categories</a>
+                
+                </li>
+                
+                <li  class="nav-item">
+                    <a id="nav-link1" class="nav-link" href="aboutus.html">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a id="nav-link1" class="nav-link" href="contactus.html">Contact Us</a>
+                </li>
+              
+              
+                  <!-- Cart Icon -->
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        <i class="text-warning fas fa-shopping-cart"></i>
+                        <span class="badge bg-danger" id="cart-count">0</span> <!-- Cart item count -->
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!-- Toggle Button for Mobile -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon "></span>
+        </button>
+    </div>
+</nav>
+
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="main">
+            <h2 class="welcome"><i>Welcome</i></h2>
+            <h1 class="clear-reflection">Clear Reflection!</h1>
+            <p class="para">We’d love to hear from you! Whether you have questions about our products, need assistance with an order, or simply want to share your thoughts, our team is here to help. Below are the best ways to get in touch with us.</p>
+            <button type="button" id="twoBorder" class="newButton">
+                <div class="in">Explore Our Contact us</div>
+            </button>
+        </div>
+
+        <div>
+            <img class="mirror-image" src="images/Gallery/Without Background/12_17_2024 7_05_19 PM.png"   alt="">
+        </div>
+    </section>
+
+
+ <div class="container9">
+
+    <div id="contact" class="container py-5">
+      <!-- Heading Section -->
+      <div class="heading_container heading_center">
+        <h2>
+           Contact Us
+        </h2>
+     </div>
+    
+      <div class="row">
+        <!-- Left Side: Contact Details -->
+        <div class="col-lg-4 col-md-6 mb-4 border-end border-3 border-warning text-c ">
+          <div class="mb-3">
+            <div class="d-flex align-items-center">
+              <i class="fas fa-map-marker-alt me-2 text-warning"></i>
+              <div  class="text-white">
+                <div class="text-white">Address</div>
+                <div>North Nazimabad sector2 shop#21</div>
+                <div>North Nazimabad sector1 shop#23</div>
+              </div>
+            </div>
+          </div>
+          <div class="mb-3">
+            <div class="d-flex align-items-center">
+              <i class="fas fa-phone-alt me-2 text-warning"></i>
+              <div class="text-white">
+                <div >Phone</div>
+                <div>+92431453425</div>
+                <div>+92351454544</div>
+              </div>
+            </div>
+          </div>
+          <div class="mb-3">
+            <div class="d-flex align-items-center">
+              <i class="fas fa-envelope me-2 text-warning"></i>
+              <div  class="text-white">
+                <div class="text-white">Email</div>
+                <div>clearreflection@gmail.com</div>
+                <div>reflection@gmail.com</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+  
+    
+        <!-- Right Side: Contact Form -->
+        <div class="col-lg-8 col-md-6 ">
+          <p class="text-white mb-4">Any questions or remarks? Just write us a message!</p>
+          <form id="contactForm" action="#">
+            <div class="mb-3">
+              <input id="name" type="text" class="form-control" placeholder="Enter your name" required />
+            </div>
+            <div class="mb-3">
+              <input id="name" type="email"  class="form-control" placeholder="Enter your Email" required />
+            </div>
+           
+            <div class="mb-3">
+              <textarea id="message" class="form-control" placeholder="Enter your message" rows="4" required></textarea>
+            </div>
+            <div class="text-center">
+              <button id="submit" type="submit" class="btn btn-primary">Send Now</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    
+      <!-- Google Map Embed -->
+      <div class="row mt-4">
+        
+        <div class="col-12">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3604.623295088117!2d68.34939627531158!3d25.38393872411176!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x394c71e6509e47fb%3A0xaa23a7e76902f0ca!2sClear%20Reflection!5e0!3m2!1sen!2s!4v1735579349952!5m2!1sen!2s" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+      </div>
+    </div></div>
+
+
+
+
+<!-- footer section -->
+
+<footer>
+  <section class="container-fluid footer_section">
+     <div class="container">
+       <div class="row ">
+         <div class="col-sm-6 col-md-4 col-lg-3 footer-col">
+           <div class="footer_detail">
+             <a class="clear" href="index.html" >
+               <h4 style="color: rgb(255, 196, 0);" >
+                 Clear reflection
+               </h4>
+             </a>
+             <p>
+  
+              At Clear Reflection, our mission is simple: to offer our customers a wide range of premium mirrors that meet the highest standards of quality, design, and affordability.
+  
+              
+             </p>
+  
+  
+             <div  class="social-container ">
+              <a target="_blank" style="color: aliceblue;" href="https://www.facebook.com/profile.php?id=61570070507770&mibextid=JRoKGi" class="social"><i class="fab fa-facebook-f"></i></a>
+              <a target="_blank" style="color: aliceblue;" href="https://www.youtube.com/@ClearReflections-m5c" class="social"><i class="fab fa-google-plus-g"></i></a>
+              <a target="_blank" style="color: aliceblue;" href="https://www.instagram.com/clearreflections7?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" class="social"><i class="fab fa-instagram">   </i></a>
+          </div>
+             
+           </div>
+         </div>
+         <div class="col-sm-6 col-md-4 col-lg-3 mx-auto footer-col">
+           <h4 style="color: rgb(255, 196, 0);">
+             Contact us
+           </h4>
+           <p>
+            We’d love to hear from you! Whether you have a question, need assistance with an order, or want to discuss custom mirror designs, our friendly team is here to help.
+           </p>
+           <div class="contact_nav">
+           
+             <a href="">
+               <i class="fa fa-phone" aria-hidden="true"></i>
+               <span>
+                 Call : +92 3455678990
+               </span>
+             </a>
+             <a href="">
+               <i class="fa fa-envelope" aria-hidden="true"></i>
+               <span>
+                 Email : clearreflection@gmail.com
+               </span>
+             </a>
+           </div>
+         </div>
+         <div class="col-md-4 footer-col">
+           <div class="footer_form">
+             <h4 style="color: rgb(255, 196, 0);">
+               SIGN UP TO OUR NEWSLETTER
+             </h4>
+             <form id="subscribe-form">
+              <input type="email" id="email" placeholder="Enter Your Email" required />
+              <button type="submit">Subscribe</button>
+              <p id="status-message"></p> <!-- For displaying subscription status -->
+            </form>
+           </div>
+         </div>
+       </div>
+       <div class="footer-info">
+        
+       </div>
+     </div>
+   </section></footer>
+   <!-- end  footer section -->
+  
+  
+   
+  
+  <script> 
+
+ 
+    window.addEventListener('load', function() {
+      
+      document.body.classList.add('loaded');
+    });
+  
+  
+  </script>
+
+<script>
+  // Add an event listener to the form submission
+  document.getElementById('contactForm').addEventListener('submit', function(event) {
+    event.preventDefault();  // Prevent the default form submission
+    
+    // Get the values from the form inputs
+    const name = document.getElementById('name').value;
+    const email = document.getElementById('email').value;
+    const message = document.getElementById('message').value;
+
+    // Clear previous error messages
+    const errorMessages = document.querySelectorAll('.error-message');
+    errorMessages.forEach(function(message) {
+      message.remove();
+    });
+
+    // Perform validation checks
+    let isValid = true;
+
+    if (name.trim() === "") {
+      isValid = false;
+      showErrorMessage('name', 'Name is required');
+    }
+
+    if (email.trim() === "") {
+      isValid = false;
+      showErrorMessage('email', 'Email is required');
+    } else if (!validateEmail(email)) {
+      isValid = false;
+      showErrorMessage('email', 'Please enter a valid email address');
+    }
+
+    if (message.trim() === "") {
+      isValid = false;
+      showErrorMessage('message', 'Message is required');
+    }
+
+    // If the form is valid, you can proceed with form submission (e.g., AJAX request)
+    if (isValid) {
+      console.log('Form Submitted');
+      console.log('Name:', name);
+      console.log('Email:', email);
+      console.log('Message:', message);
+
+      // Reset the form fields
+      document.getElementById('contactForm').reset();
+      
+      // Display a success message
+      alert('Your message has been sent successfully!');
+    }
+  });
+
+  // Function to display an error message next to the input field
+  function showErrorMessage(fieldId, message) {
+    const inputField = document.getElementById(fieldId);
+    const errorMessage = document.createElement('div');
+    errorMessage.classList.add('error-message');
+    errorMessage.style.color = 'red';
+    errorMessage.textContent = message;
+    inputField.insertAdjacentElement('afterend', errorMessage);
+  }
+
+  // Function to validate email format using a simple regular expression
+  function validateEmail(email) {
+    const regex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+    return regex.test(email);
+  }
+</script>
+
+
+<script>
+  
+  document.getElementById('twoBorder').addEventListener('click', function() {
+     
+     document.getElementById('contact').scrollIntoView({
+       behavior: 'smooth',
+       block: 'start'      
+     });
+   });
+ 
+ 
+
+ </script>
+ 
+
+
+
+ <script>// Function to update the cart count in the navigation
+  function updateCartCount() {
+      const cart = JSON.parse(localStorage.getItem('cart')) || [];
+      document.getElementById('cart-count').textContent = cart.length;
+  }
+  
+  // Add event listener to each "Add to Cart" button
+  const addToCartButtons = document.querySelectorAll('.add-to-cart');
+  addToCartButtons.forEach(button => {
+      button.addEventListener('click', function(event) {
+          event.preventDefault();
+  
+          // Get product data from the clicked button's data attributes
+          const productName = this.getAttribute('data-name');
+          const productPrice = this.getAttribute('data-price');
+          const productImg = this.getAttribute('data-img');
+  
+          // Create product object to store in the cart
+          const product = {
+              name: productName,
+              price: productPrice,
+              img: productImg
+          };
+  
+          // Retrieve the current cart from localStorage, or create an empty array if it doesn't exist
+          let cart = JSON.parse(localStorage.getItem('cart')) || [];
+  
+          // Add the new product to the cart
+          cart.push(product);
+  
+          // Save the updated cart back to localStorage
+          localStorage.setItem('cart', JSON.stringify(cart));
+  
+          // Update the cart count
+          updateCartCount();
+  
+          // Optional: Show a confirmation message to the user
+          alert(`${productName} has been added to your cart!`);
+      });
+  });
+  
+  // Update the cart count on page load
+  document.addEventListener('DOMContentLoaded', function() {
+      updateCartCount();
+  });
+  </script>
+  
+<script>
+  // Get the form, email input, and status message elements
+  const form = document.getElementById('subscribe-form');
+  const emailInput = document.getElementById('email');
+  const statusMessage = document.getElementById('status-message');
+
+  // Listen for form submission
+  form.addEventListener('submit', function(event) {
+    event.preventDefault(); // Prevent page reload
+
+    // Get the email value
+    const email = emailInput.value.trim();
+
+    // Basic email validation 
+
+    if (!email || !validateEmail(email)) {
+      alert('You have sucessfully submitted');
+      return;
+      emailInput.value = '';
+    }
+
+    // Simulate a successful subscription
+    statusMessage.textContent = 'You sign up for Newsletter!';
+    statusMessage.style.color = 'green';
+    emailInput.value = '';
+  });
+
+  // Simple email validation function
+  function validateEmail(email) {
+    const emailRegex = /^[\w.-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/
+;
+    return emailRegex.test(email);
+  }
+</script>
+
+<script>// loader effect
+       
+
+  window.addEventListener('load', function() {
+      // Simulate loading time
+      setTimeout(function() {
+          // Hide the loading spinner
+          document.querySelector('.loading-container').style.display = 'none';
+          // Show the content
+          document.querySelector('.content').style.display = 'block';
+      }, 3000); // Simulate a 3-second delay
+  });
+</script>
+
+  
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+
+</body>
+</html>

@@ -1,0 +1,717 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="images/css/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+</head>
+
+
+<style>
+
+
+.body{
+
+  border-bottom: 2px solid white;
+}
+
+
+/* -------------General Body Styles---------------- */
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-image: url(images/Gallery/Background/12_20_2024\ 9_24_03\ AM.png);
+    background-size: cover;
+    background-position: center;
+    opacity: 0; 
+    transition: opacity 1s ease-in-out; 
+}
+
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('https://png.pngtree.com/background/20230519/original/pngtree-vintage-mirrors-in-a-room-with-many-mirrors-picture-image_2659080.jpg');
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+    z-index: -1;
+    transition: opacity 1s ease-in-out; 
+}
+
+body.loaded {
+    opacity: 1;
+}
+
+
+body.loaded::before {
+    opacity: 0.2; 
+}
+
+/* -----------General body Style------------- */
+
+
+
+
+
+
+
+
+</style>
+<body>
+ <!-- Loading Spinner -->
+ <div class="loading-container">
+  <div class="loading-spinner"></div>
+</div>
+        
+
+    <!-- Header Section -->
+   <!-- Navbar Section -->
+   <nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">
+            <img id="logo1" src="images/Gallery/logo/97759E74-FEB3-4EAB-80D0-E8ED13B462EE-removebg-preview.png" width="25%" alt="">
+        </a>
+        <!-- Navbar Links and Search Form -->
+        <div class="collapse navbar-collapse text-center item9" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a id="nav-link" class="nav-link " href="home.html">Home</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a id="nav-link" class="nav-link" href="Categories.html"> Categories</a>
+                
+                </li>
+                
+                <li  class="nav-item">
+                    <a id="nav-link1" class="nav-link" href="aboutus.html">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a id="nav-link1" class="nav-link" href="contactus.html">Contact Us</a>
+                </li>
+              
+              
+                  <!-- Cart Icon -->
+                  <li class="nav-item">
+                    <a class="nav-link" href="addtocart.html">
+                        <i class="text-warning fas fa-shopping-cart"></i>
+                        <span class="badge bg-danger" id="cart-count">0</span> <!-- Cart item count -->
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!-- Toggle Button for Mobile -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon "></span>
+        </button>
+    </div>
+</nav>
+
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="main">
+            <h2 class="welcome"><i>Welcome</i></h2>
+            <h1 class="clear-reflection">Clear Reflection!</h1>
+            <p class="para">At Clear Reflection, we believe that mirrors are more than just functional items; they are a key element of interior design that enhances the ambiance of any room. Whether you’re searching for a mirror to complete your space or a statement piece that will stand out, we offer a wide range of styles and sizes to suit your needs. Our product categories are designed to help you navigate through our collection easily, ensuring you find the perfect mirror for your home.</p>
+            <button type="button" id="twoBorder" class="newButton">
+                <div class="in">Explore Our Categories</div>
+            </button>
+        </div>
+
+        <div>
+            <img class="mirror-image" src="images/Gallery/Without Background/12_17_2024 7_05_19 PM.png"   alt="">
+        </div>
+    </section>
+
+
+
+<section class="Categoreis-bg">
+
+      <div id="categories-bg" class="heading_container heading_center">
+        <h2>
+          Categories <span></span>
+        </h2>
+      </div>
+
+
+
+
+
+
+  
+  <a href="#category" class="up-icon"><i class="fa-solid fa-circle-chevron-up"></i></a>
+   
+  
+ 
+  <!--Filter Button-->
+
+
+
+  <div class = "filter-btns ">
+
+     
+
+
+
+
+    
+    <button type = "button" class = "filter-btn" id = "all">all</button>
+
+    <button type = "button" class = "filter-btn" id = "new"> <img  src="images/Gallery/Others/pngwing.com (3).png" width="111px" alt=""> <p class="text-white">Drawingroom Mirrors</p></button>
+
+    <button type = "button" class = "filter-btn" id = "office-wear"><img src="images/Gallery/Others/pngwing.com (4).png" width="151px" alt=""> <p class="text-white">Bedroom Mirrors</p> </button>
+    <button type = "button" class = "filter-btn" id = "t-shirts"> <img src="images/Gallery/Others/pngwing.com (5).png" width="191px" alt=""> <p class="text-white">Bathroom Mirrors</p>  </button>
+    <button type = "button" class = "filter-btn" id = "offers"> <img src="images/Gallery/Others/pngwing.com (6).png" width="161px" alt=""> <p class="text-white">Dressingroom Mirrors</p>  </button>
+
+
+
+
+  </div>
+  
+  <div class="body">
+
+  <!--Product Cards-->
+  <section id="product-cards">
+    <div class="container-fluid">
+      <div class="row row-cols-2 row-cols-md-4 g-4">
+
+        <div class=" col filter-item all new ">
+          <div class="card h-100">
+            <img src="images/Gallery/Bathroom mirrors/1.jfif" height="400px" alt="...">
+            <div class="card-body">
+              <h5 class="card-title shop-item-title">Warm LED Lighting Mirror</h5>
+              <p class="card-text shop-item-price"> Rs 6990.00</p>
+              <a href="singlecart1.html">
+                <button type="button" style="width: 100%;" class="btn btn-warning mt-auto shop-item-button">
+                    <i class="fa-solid fa-cart-shopping" style="margin-right: 4%;"></i>View More
+                </button>
+            </a> <br><br>
+              <a href="images/Ms Word document/Led mirror About Us.docx">
+                <button type="button" style="width: 100%;" class="btn btn-warning mt-auto shop-item-button">
+                    <i class="fa-solid fa-cart-shopping" style="margin-right: 4%;"></i>Download Now
+                </button>
+            </a>
+            
+
+            </div>
+          </div>
+        </div>
+  
+        <div class=" col filter-item all new">
+          <div class="card h-100">
+            <img src="https://m.media-amazon.com/images/I/71Md04SGGdL._AC_SX679_.jpg" height="400px" class="card-img-top shop-item-image" alt="...">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title shop-item-title">Multi LED Lighting Mirror</h5>
+              <p class="card-text shop-item-price"> Rs 5790.00</p>
+              <a href="singlecart2.html">
+              <button type="button" style="width: 100%;" class="btn btn-warning mt-auto shop-item-button"><i class="fa-solid fa-cart-shopping " style="margin-right: 4%;"></i>View More</button></a>
+              <br>
+              <a href="New Microsoft Word Document.docx">
+                <button type="button" style="width: 100%;" class="btn btn-warning mt-auto shop-item-button">
+                    <i class="fa-solid fa-cart-shopping" style="margin-right: 4%;"></i>Download Now
+                </button>
+            </a>
+        </div>
+            </div>
+          </div>
+  
+        <div class=" col filter-item all new">
+          <div class="card h-100">
+            <img src="https://m.media-amazon.com/images/I/71mGAOKJDtL.__AC_SX300_SY300_QL70_FMwebp_.jpg"  class="card-img-top shop-item-image" height="400px" alt="...">
+            <div class="card-body">
+              <h5 class="card-title shop-item-title">Siver Metal Bordered Mirror </h5>
+              <p class="card-text shop-item-price"> Rs 5790.00</p>
+              <a href="singlecart3.html">
+              <button type="button" style="width: 100%;" class="btn btn-warning mt-auto shop-item-button"><i class="fa-solid fa-cart-shopping " style="margin-right: 4%;"></i>View More</button></a><br><br>
+              <a href="New Microsoft Word Document.docx">
+                <button type="button" style="width: 100%;" class="btn btn-warning mt-auto shop-item-button">
+                    <i class="fa-solid fa-cart-shopping" style="margin-right: 4%;"></i>Download Now
+                </button>
+            </a>
+            </div>
+          </div>
+        </div>
+  
+        <div class=" col filter-item all new">
+          <div class="card h-100">
+            <img src="https://m.media-amazon.com/images/I/81nOGO0JAWL._AC_SX679_.jpg" class="card-img-top shop-item-image " height="400px" alt="...">
+            <div class="card-body">
+              <h5 class="card-title shop-item-title">Bluetooth Blacking Mirror
+                </h5>
+              <p class="card-text shop-item-price"> Rs 5990.00</p>
+              <a href="singlecart5.html">
+              <button type="button" style="width: 100%;" class="btn btn-warning mt-auto shop-item-button"><i class="fa-solid fa-cart-shopping " style="margin-right: 4%;"></i>View More</button></a><br><br>
+              <a href="New Microsoft Word Document.docx">
+                <button type="button" style="width: 100%;" class="btn btn-warning mt-auto shop-item-button">
+                    <i class="fa-solid fa-cart-shopping" style="margin-right: 4%;"></i>Download Now
+                </button>
+            </a>
+            </div>
+          </div>
+        </div>
+  
+        <div class=" col filter-item all office-wear ">
+          <div class="card h-100">
+            <img src="https://m.media-amazon.com/images/I/7111slY6y6L.__AC_SX300_SY300_QL70_FMwebp_.jpg" class="card-img-top shop-item-image" height="400px" alt="...">
+            <div class="card-body">
+              <h5 class="card-title shop-item-title">Wood Framed Mirror</h5>
+              <p class="card-text shop-item-price"> Rs 5990.00</p>
+              <a href="singlecart4.html">
+              <button type="button" style="width: 100%;" class="btn btn-warning mt-auto shop-item-button"><i class="fa-solid fa-cart-shopping " style="margin-right: 4%;"></i>View More</button></a><br><br>
+              <a href="New Microsoft Word Document.docx">
+                <button type="button" style="width: 100%;" class="btn btn-warning mt-auto shop-item-button">
+                    <i class="fa-solid fa-cart-shopping" style="margin-right: 4%;"></i>Download Now
+                </button>
+            </a>
+            </div>
+          </div>
+        </div>
+  
+        <div class=" col filter-item all office-wear">
+          <div class="card h-100">
+            <img src="https://m.media-amazon.com/images/I/51WBk+R-beL._AC_SY300_SX300_.jpg" class="card-img-top shop-item-image" height="400px" alt="...">
+            <div class="card-body">
+              <h5 class="card-title shop-item-title">Acrylic bordered Mirror</h5>
+              <p class="card-text shop-item-price">Rs 3290.00</p>
+              <a href="singlecart6.html">
+              <button type="button" style="width: 100%;" class="btn btn-warning mt-auto shop-item-button"><i class="fa-solid fa-cart-shopping " style="margin-right: 4%;"></i>View More</button></a><br><br>
+              <a href="New Microsoft Word Document.docx">
+                <button type="button" style="width: 100%;" class="btn btn-warning mt-auto shop-item-button">
+                    <i class="fa-solid fa-cart-shopping" style="margin-right: 4%;"></i>Download Now
+                </button>
+            </a>
+            </div>
+          </div>
+        </div>
+        
+        <div class=" col filter-item all office-wear">
+          <div class="card h-100">
+            <img src="https://m.media-amazon.com/images/I/71XCOudJziL._AC_SX679_.jpg" class="card-img-top shop-item-image" height="400px" alt="...">
+            <div class="card-body">
+              <h5 class="card-title shop-item-title">Decorative Wall Mirror</h5>
+              <p class="card-text shop-item-price">Rs 3290.00</p>
+              <a href="singlecart7.html">
+              <button type="button" style="width: 100%;" class="btn btn-warning mt-auto shop-item-button"><i class="fa-solid fa-cart-shopping " style="margin-right: 4%;"></i>View More</button></a><br><br>
+              <a href="New Microsoft Word Document.docx">
+                <button type="button" style="width: 100%;" class="btn btn-warning mt-auto shop-item-button">
+                    <i class="fa-solid fa-cart-shopping" style="margin-right: 4%;"></i>Download Now
+                </button>
+            </a>
+            </div>
+          </div>
+        </div>
+  
+        <div class=" col filter-item all office-wear">
+          <div class="card h-100">
+            <img src="https://m.media-amazon.com/images/I/6172sSgnYtL._AC_SX679_.jpg" class="card-img-top shop-item-image" height="400px" alt="...">
+            <div class="card-body">
+              <h5 class="card-title shop-item-title">Triangle Bordered Mirror</h5>
+              <p class="card-text shop-item-price">Rs 3690.00</p>
+              <a href="singlecart8.html">
+              <button type="button" style="width: 100%;" class="btn btn-warning mt-auto shop-item-button"><i class="fa-solid fa-cart-shopping " style="margin-right: 4%;"></i>View More</button></a><br><br>
+              <a href="New Microsoft Word Document.docx">
+                <button type="button" style="width: 100%;" class="btn btn-warning mt-auto shop-item-button">
+                    <i class="fa-solid fa-cart-shopping" style="margin-right: 4%;"></i>Download Now
+                </button>
+            </a>
+            </div>
+          </div>
+        </div>
+  
+        <div class=" col filter-item all t-shirts">
+          <div class="card h-100">
+            <img src="https://m.media-amazon.com/images/I/81XLqXDnJvL.__AC_SX300_SY300_QL70_FMwebp_.jpg" class="card-img-top shop-item-image" height="400px" alt="...">
+            <div class="card-body">
+              <h5 class="card-title shop-item-title">Multi Shape Bordered Mirror</h5>
+              <p class="card-text shop-item-price">Rs 3450.00</p>
+              <a href="singlecart9.html">
+              <button type="button" style="width: 100%;" class="btn btn-warning mt-auto shop-item-button"><i class="fa-solid fa-cart-shopping " style="margin-right: 4%;"></i>View More</button></a><br><br>
+              <a href="New Microsoft Word Document.docx">
+                <button type="button" style="width: 100%;" class="btn btn-warning mt-auto shop-item-button">
+                    <i class="fa-solid fa-cart-shopping" style="margin-right: 4%;"></i>Download Now
+                </button>
+            </a>
+            </div>
+          </div>
+        </div>
+  
+        <div class=" col filter-item all t-shirts">
+          <div class="card h-100">
+            <img src="https://m.media-amazon.com/images/I/817WYD4ZBFL.__AC_SX300_SY300_QL70_FMwebp_.jpg" class="card-img-top shop-item-image" height="400px" alt="...">
+            <div class="card-body">
+              <h5 class="card-title shop-item-title">Rounded Decorative Mirror</h5>
+              <p class="card-text shop-item-price">Rs 2500.00</p>
+              <a href="singlecart10.html">
+              <button type="button" style="width: 100%;" class="btn btn-warning mt-auto shop-item-button"><i class="fa-solid fa-cart-shopping " style="margin-right: 4%;"></i>View More</button></a><br><br>
+              <a href="New Microsoft Word Document.docx">
+                <button type="button" style="width: 100%;" class="btn btn-warning mt-auto shop-item-button">
+                    <i class="fa-solid fa-cart-shopping" style="margin-right: 4%;"></i>Download Now
+                </button>
+            </a>
+            </div>
+          </div>
+        </div>
+  
+        <div class=" col filter-item all t-shirts">
+          <div class="card h-100">
+            <img src="https://m.media-amazon.com/images/I/71Lto7hlhZL.__AC_SX300_SY300_QL70_FMwebp_.jpg" class="card-img-top shop-item-image" height="400px" alt="...">
+            <div class="card-body">
+              <h5 class="card-title shop-item-title">Golden Square wall Mirror</h5>
+              <p class="card-text shop-item-price">Rs 2990.00</p>
+              <a href="singlecart11.html">
+              <button type="button" style="width: 100%;" class="btn btn-warning mt-auto shop-item-button"><i class="fa-solid fa-cart-shopping " style="margin-right: 4%;"></i>View More</button></a><br><br>
+              <a href="New Microsoft Word Document.docx">
+                <button type="button" style="width: 100%;" class="btn btn-warning mt-auto shop-item-button">
+                    <i class="fa-solid fa-cart-shopping" style="margin-right: 4%;"></i>Download Now
+                </button>
+            </a>
+            </div>
+          </div>
+        </div>
+  
+        <div class=" col filter-item all t-shirts">
+          <div class="card h-100">
+            <img src="https://m.media-amazon.com/images/I/61NvptdrLtL.__AC_SX300_SY300_QL70_FMwebp_.jpg" class="card-img-top shop-item-image" height="400px" alt="...">
+            <div class="card-body">
+              <h5 class="card-title shop-item-title">Rectagle Silver Wall Mirror</h5>
+              <p class="card-text shop-item-price">Rs 3990.00</p>
+              <a href="singlecart12.html">
+              <button type="button" style="width: 100%;" class="btn btn-warning mt-auto shop-item-button"><i class="fa-solid fa-cart-shopping " style="margin-right: 4%;"></i>View More</button></a><br><br>
+              <a href="New Microsoft Word Document.docx">
+                <button type="button" style="width: 100%;" class="btn btn-warning mt-auto shop-item-button">
+                    <i class="fa-solid fa-cart-shopping" style="margin-right: 4%;"></i>Download Now
+                </button>
+            </a>
+            </div>
+          </div>
+        </div>
+  
+        <div class=" col filter-item all offers">
+          <div class="card h-100">
+            <img src="https://m.media-amazon.com/images/I/81cVMdhmagL.__AC_SX300_SY300_QL70_FMwebp_.jpg" class="card-img-top shop-item-image" height="400px" alt="...">
+            <div class="card-body">
+              <h5 class="card-title shop-item-title">Decorative Boxes Mirror</h5>
+              <p class="card-text shop-item-price">Rs 3690.00</p>
+              <a href="singlecart13.html">
+              <button type="button" style="width: 100%;" class="btn btn-warning mt-auto shop-item-button"><i class="fa-solid fa-cart-shopping " style="margin-right: 4%;"></i>View More</button></a><br><br>
+              <a href="New Microsoft Word Document.docx">
+                <button type="button" style="width: 100%;" class="btn btn-warning mt-auto shop-item-button">
+                    <i class="fa-solid fa-cart-shopping" style="margin-right: 4%;"></i>Download Now
+                </button>
+            </a>
+            </div>
+          </div>
+        </div>
+  
+        <div class=" col filter-item all offers">
+          <div class="card h-100">
+            <img src="https://m.media-amazon.com/images/I/81aaXKBS5GL._AC_SX679_.jpg" class="card-img-top shop-item-image" height="400px" alt="...">
+            <div class="card-body">
+              <h5 class="card-title shop-item-title">black  Stand Mirror</h5>
+              <p class="card-text shop-item-price">Rs 3690.00</p>
+              <a href="singlecart14.html">
+              <button type="button" style="width: 100%;" class="btn btn-warning mt-auto shop-item-button"><i class="fa-solid fa-cart-shopping  " style="margin-right: 4%;"></i>View More</button></a><br><br>
+              <a href="New Microsoft Word Document.docx">
+                <button type="button" style="width: 100%;" class="btn btn-warning mt-auto shop-item-button">
+                    <i class="fa-solid fa-cart-shopping" style="margin-right: 4%;"></i>Download Now
+                </button>
+            </a>
+            </div>
+          </div>
+        </div>
+  
+        <div class=" col filter-item all offers">
+          <div class="card h-100">
+            <img src="https://m.media-amazon.com/images/I/71eB69yI9BL._AC_SX679_.jpg" class="card-img-top shop-item-image" height="400px" alt="...">
+            <div class="card-body">
+              <h5 class="card-title shop-item-title">Hanging Black Mirror</h5>
+              <p class="card-text shop-item-price">Rs 3690.00</p>
+              <a href="singlecart15.html">
+              <button type="button" style="width: 100%;" class="btn btn-warning mt-auto shop-item-button"><i class="fa-solid fa-cart-shopping " style="margin-right: 4%;"></i>View More</button></a><br><br>
+              <a href="New Microsoft Word Document.docx">
+                <button type="button" style="width: 100%;" class="btn btn-warning mt-auto shop-item-button">
+                    <i class="fa-solid fa-cart-shopping" style="margin-right: 4%;"></i>Download Now
+                </button>
+            </a>
+            </div>
+          </div>
+        </div>
+  
+        <div class=" col filter-item all offers">
+          <div class="card h-100">
+            <img src="https://m.media-amazon.com/images/I/81ED3iEhl8L._AC_SX679_.jpg" class="card-img-top shop-item-image" height="400px" alt="...">
+            <div class="card-body">
+              <h5 class="card-title shop-item-title">Woodframed Mirror</h5>
+              <p class="card-text shop-item-price">Rs 3690.00</p>
+              <a href="singlecart16.html">
+              <button type="button" style="width: 100%;" class="btn btn-warning mt-auto shop-item-button"><i class="fa-solid fa-cart-shopping " style="margin-right: 4%;"></i>View More</button></a><br><br>
+              <a href="New Microsoft Word Document.docx">
+                <button type="button" style="width: 100%;" class="btn btn-warning mt-auto shop-item-button">
+                    <i class="fa-solid fa-cart-shopping" style="margin-right: 4%;"></i>Download Now
+                </button>
+            </a>
+            </div>
+          </div>
+        </div>
+  
+      </div>
+    </div>
+  </section>    </section>
+  
+</div>
+
+
+
+<!-- footer section -->
+
+<footer>
+  <section class="container-fluid footer_section">
+     <div class="container">
+       <div class="row ">
+         <div class="col-sm-6 col-md-4 col-lg-3 footer-col">
+           <div class="footer_detail">
+             <a class="clear" href="index.html" >
+               <h4 style="color: rgb(255, 196, 0);" >
+                 Clear reflection
+               </h4>
+             </a>
+             <p>
+  
+              At Clear Reflection, our mission is simple: to offer our customers a wide range of premium mirrors that meet the highest standards of quality, design, and affordability.
+  
+              
+             </p>
+  
+  
+             <div  class="social-container ">
+              <a target="_blank" style="color: aliceblue;" href="https://www.facebook.com/profile.php?id=61570070507770&mibextid=JRoKGi" class="social"><i class="fab fa-facebook-f"></i></a>
+              <a target="_blank" style="color: aliceblue;" href="https://www.youtube.com/@ClearReflections-m5c" class="social"><i class="fab fa-google-plus-g"></i></a>
+              <a target="_blank" style="color: aliceblue;" href="https://www.instagram.com/clearreflections7?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" class="social"><i class="fab fa-instagram">   </i></a>
+          </div>
+             
+           </div>
+         </div>
+         <div class="col-sm-6 col-md-4 col-lg-3 mx-auto footer-col">
+           <h4 style="color: rgb(255, 196, 0);">
+             Contact us
+           </h4>
+           <p>
+            We’d love to hear from you! Whether you have a question, need assistance with an order, or want to discuss custom mirror designs, our friendly team is here to help.
+           </p>
+           <div class="contact_nav">
+           
+             <a href="#">
+               <i class="fa fa-phone" aria-hidden="true"></i>
+               <span>
+                 Call : +92 3455678990
+               </span>
+             </a>
+             <a href="#">
+               <i class="fa fa-envelope" aria-hidden="true"></i>
+               <span>
+                 Email : clearreflection@gmail.com
+               </span>
+             </a>
+           </div>
+         </div>
+         <div class="col-md-4 footer-col">
+           <div class="footer_form">
+             <h4 style="color: rgb(255, 196, 0);">
+               SIGN UP TO OUR NEWSLETTER
+             </h4>
+             <form id="subscribe-form">
+              <input type="email" id="email" placeholder="Enter Your Email" required />
+              <button type="submit">Subscribe</button>
+              <p id="status-message"></p> <!-- For displaying subscription status -->
+            </form>
+           </div>
+         </div>
+       </div>
+       <div class="footer-info">
+        
+       </div>
+     </div>
+   </section></footer>
+   <!-- end  footer section -->
+  
+  
+   
+
+
+
+
+
+  <script>
+
+
+const allFilterItems = document.querySelectorAll('.filter-item');
+const allFilterBtns = document.querySelectorAll('.filter-btn');
+
+window.addEventListener('DOMContentLoaded', () => {
+    allFilterBtns[1].classList.add('active-btn');
+});
+
+allFilterBtns.forEach((btn) => {
+    btn.addEventListener('click', () => {
+        showFilteredContent(btn);
+    });
+});
+
+function showFilteredContent(btn){
+    allFilterItems.forEach((item) => {
+        if(item.classList.contains(btn.id)){
+            resetActiveBtn();
+            btn.classList.add('active-btn');
+            item.style.display = "block";
+        } else {
+            item.style.display = "none";
+        }
+    });
+}
+
+function resetActiveBtn(){
+    allFilterBtns.forEach((btn) => {
+        btn.classList.remove('active-btn');
+    });
+}
+
+
+
+
+
+    
+window.addEventListener('load', function() {
+  
+    document.body.classList.add('loaded');
+});
+
+
+document.getElementById('twoBorder').addEventListener('click', function() {
+    
+    document.getElementById('categories-bg').scrollIntoView({
+      behavior: 'smooth',
+      block: 'start'      
+    });
+  });
+
+  document.getElementById('drawing').addEventListener('click', function() {
+  
+    window.location.href = "index.html";
+});
+
+
+  </script>
+
+
+
+<script>// Function to update the cart count in the navigation
+  function updateCartCount() {
+      const cart = JSON.parse(localStorage.getItem('cart')) || [];
+      document.getElementById('cart-count').textContent = cart.length;
+  }
+  
+  // Add event listener to each "Add to Cart" button
+  const addToCartButtons = document.querySelectorAll('.add-to-cart');
+  addToCartButtons.forEach(button => {
+      button.addEventListener('click', function(event) {
+          event.preventDefault();
+  
+          // Get product data from the clicked button's data attributes
+          const productName = this.getAttribute('data-name');
+          const productPrice = this.getAttribute('data-price');
+          const productImg = this.getAttribute('data-img');
+  
+          // Create product object to store in the cart
+          const product = {
+              name: productName,
+              price: productPrice,
+              img: productImg
+          };
+  
+          // Retrieve the current cart from localStorage, or create an empty array if it doesn't exist
+          let cart = JSON.parse(localStorage.getItem('cart')) || [];
+  
+          // Add the new product to the cart
+          cart.push(product);
+  
+          // Save the updated cart back to localStorage
+          localStorage.setItem('cart', JSON.stringify(cart));
+  
+          // Update the cart count
+          updateCartCount();
+  
+          // Optional: Show a confirmation message to the user
+          alert(`${productName} has been added to your cart!`);
+      });
+  });
+  
+  // Update the cart count on page load
+  document.addEventListener('DOMContentLoaded', function() {
+      updateCartCount();
+  });
+  </script>
+  
+<script>
+  // Get the form, email input, and status message elements
+  const form = document.getElementById('subscribe-form');
+  const emailInput = document.getElementById('email');
+  const statusMessage = document.getElementById('status-message');
+
+  // Listen for form submission
+  form.addEventListener('submit', function(event) {
+    event.preventDefault(); // Prevent page reload
+
+    // Get the email value
+    const email = emailInput.value.trim();
+
+    // Basic email validation 
+
+    if (!email || !validateEmail(email)) {
+      alert('You have sucessfully submitted');
+      return;
+      emailInput.value = '';
+    }
+
+    // Simulate a successful subscription
+    statusMessage.textContent = 'You sign up for Newsletter!';
+    statusMessage.style.color = 'green';
+    emailInput.value = '';
+  });
+
+  // Simple email validation function
+  function validateEmail(email) {
+    const emailRegex = /^[\w.-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/
+;
+    return emailRegex.test(email);
+  }
+</script>
+
+<script>// loader effect
+       
+
+  window.addEventListener('load', function() {
+      // Simulate loading time
+      setTimeout(function() {
+          // Hide the loading spinner
+          document.querySelector('.loading-container').style.display = 'none';
+          // Show the content
+          document.querySelector('.content').style.display = 'block';
+      }, 3000); // Simulate a 3-second delay
+  });
+</script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+
+</body>
+</html>

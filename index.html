@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Radius - Signin/Signup</title>
+
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="images/css/styles.css">
+
+    <style>
+        /* ------General-------- */
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background: #f6f5f7;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        #body1 {
+            background-image: url(images/Gallery/Background/gold_silver_steel_decorate_wall_mirror_hd_mirror.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            backdrop-filter: blur(2px);
+        }
+    </style>
+</head>
+
+<body id="body1">
+
+    <div class="loading-container">
+        <div class="loading-spinner"></div>
+    </div>
+    <div class="form_container" id="container">
+        <div class="form-container sign-up-container">
+
+
+
+
+            <form id="signupForm" action="home.html" method="POST" onsubmit="return validateForm()">
+                <h1>Create Account</h1>
+                <div class="social-container">
+                    <a target="_blank" href="https://www.facebook.com/profile.php?id=61570070507770&mibextid=JRoKGi" class="social"><i class="fab fa-facebook-f"></i></a>
+                    <a target="_blank" href="https://www.youtube.com/@ClearReflections-m5c" class="social"><i class="fab fa-google-plus-g"></i></a>
+                    <a target="_blank" href="https://www.instagram.com/clearreflections7?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" class="social"><i class="fab fa-instagram">   </i></a>
+                </div>
+                <span>To keep connected with us please login with your personal info</span>
+                <input id="name" type="text" placeholder="Username" name="username" />
+                <input id="email" type="email" placeholder="Email" name="email" />
+                <input id="password" type="password" placeholder="Password" name="password" />
+                <button id="signInBtn" type="submit">Sign In</button>
+            </form>
+
+
+
+        </div>
+
+        <div class="form-container sign-in-container">
+            <!-- Include Animate.css from CDN for text animations -->
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000" data-bs-pause="hover">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <!-- Slide 1 -->
+                    <div class="carousel-item active">
+                        <img src="https://i.pinimg.com/736x/e2/94/a3/e294a354bf5a15a308d32da7df93badb.jpg" class="d-block w-100" alt="..." height="480px">
+                    </div>
+                    <!-- Slide 2 -->
+                    <div class="carousel-item">
+                        <img src="https://i.pinimg.com/736x/d9/b1/c4/d9b1c4c793dfa28a337747297a94887f.jpg" class="d-block w-100" alt="..." height="480px">
+                    </div>
+                    <!-- Slide 3 -->
+                    <div class="carousel-item">
+                        <img src="https://i.pinimg.com/736x/e7/16/78/e71678ec24c927fb0f67b6140edd143c.jpg" class="d-block w-100" alt="..." height="480px">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+
+        <div class="overlay-container">
+            <div class="overlay">
+                <div class="overlay-panel overlay-left">
+                    <h1>Hello Friend!</h1>
+                    <p>To keep connected with us please login with your personal info</p>
+                    <button class="ghost" id="signIn">Resturant</button>
+                </div>
+                <div class="overlay-panel overlay-right">
+                    <h1>Welcome Back!</h1>
+                    <p>Welcome to <i>Clear Reflection</i> online ordering and loyalty platform! <br> <br> Sign In your account then order mirrors</p>
+                    <button class="ghost" id="signUp">Sign In</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="images/js/script.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+</body>
+
+</html>
